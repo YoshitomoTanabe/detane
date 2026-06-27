@@ -20,7 +20,8 @@
 				"Orta.vscode-jest",
 				"bradlc.vscode-tailwindcss",
 				"dsznajder.es7-react-js-snippets",
-				"PKief.material-icon-theme"
+				"PKief.material-icon-theme",
+				"openai.chatgpt"
 			]
 		}
 	},
