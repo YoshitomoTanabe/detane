@@ -1,0 +1,26 @@
+{
+  "name": "baby-health-tracker",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "jest-environment-jsdom": "^30.4.1",
+    "jest-localstorage-mock": "^2.4.26",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}

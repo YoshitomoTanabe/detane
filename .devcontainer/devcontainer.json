@@ -28,10 +28,15 @@
 	"mounts": [
 		{
 			"source": "${localWorkspaceFolderBasename}-node-modules",
-			"target": "/workspaces/${localWorkspaceFolderBasename}/node_modules",
+			"target": "/workspaces/${localWorkspaceFolderBasename}/aws-cdk/node_modules",
+			"type": "volume"
+		},
+		{
+			"source": "${localWorkspaceFolderBasename}-react-node-modules",
+			"target": "/workspaces/${localWorkspaceFolderBasename}/aws-cdk/lib/construct/frontend/react/node_modules",
 			"type": "volume"
 		}
 	],
 	"remoteUser": "node",
-	"postCreateCommand": "sudo chown node node_modules && npm install"
+	"postCreateCommand": "cd aws-cdk/ && sudo chown node:node node_modules && npm install && cd lib/construct/frontend/react && sudo chown node:node node_modules && npm install"
 }

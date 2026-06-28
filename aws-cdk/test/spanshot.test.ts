@@ -1,6 +1,6 @@
 import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import Detane from '../lib/stack/detane-stack';
+import Detane from '../../lib/stack/detane-stack';
 
 test('スナップショットと一致している', () => {
   const app = new cdk.App();
